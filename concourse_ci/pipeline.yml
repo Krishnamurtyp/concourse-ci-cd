@@ -15,10 +15,9 @@ resources:
   - name: spring-boot-service-docker-repository
     type: docker-image
     source:
-      email: ((docker-hub-email))
-      username: ((docker-hub-username))
-      password: ((docker-hub-password))
-      repository: ((docker-hub-username))/((docker-hub-repo-name))
+      username: ((registry-username))
+      password: ((registry-password))
+      repository: mnieto0398/test
 
   - name: kubectl
     type: kubectl-resource
