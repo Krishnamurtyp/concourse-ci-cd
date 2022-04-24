@@ -19,13 +19,7 @@ resources:
       password: ((registry-password))
       repository: mnieto0398/test
 
-  - name: kubectl
-    type: kubectl-resource
-    source:
-      api_server_uri: ((server))
-      namespace: ((namespace))
-      certificate_authority_data: ((cad))
-      token: ((token))
+
 
 jobs:
   - name: test
