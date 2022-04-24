@@ -19,6 +19,8 @@ resources:
       password: ((registry-password))
       repository: mnieto0398/test
 
+  - name: kubectl
+    type: kubectl-resource
 
 
 jobs:
@@ -52,6 +54,6 @@ jobs:
         trigger: false
         passed: [package]
 
-      - put: 
+      - put: kubectl
         params:
           file: "spring-boot-service/spring-boot-deploy.yaml"
